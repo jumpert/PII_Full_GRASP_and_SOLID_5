@@ -30,12 +30,13 @@ namespace Full_GRASP_And_SOLID
                 (this.Input.UnitCost * this.Quantity) +
                 (this.Equipment.HourlyCost * this.Time);
         }
-
+        
         // Agregado por SRP
         public override string GetTextToPrint()
         {
             return $"{this.Quantity} de '{this.Input.Description}' " +
                 $"usando '{this.Equipment.Description}' durante {this.Time}";
         }
+        
     }
 }
